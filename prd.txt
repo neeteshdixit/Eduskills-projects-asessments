@@ -1,0 +1,1344 @@
+# Simplified PRD Template
+
+---
+
+## Instructions for AI Model
+
+**Before generating the PRD, the AI model MUST:**
+
+### 1. Ask Clarifying Questions
+
+Ask only the **essential** questions to get started. The AI should handle the heavy lifting and make intelligent defaults:
+
+**Core Questions (Ask these first):**
+1. **What is the project name and what does it do?** (1-2 sentences)
+2. **Who will use this product?** (primary user type)
+3. **What are the 3 must-have features for MVP?**
+4. **How much time do you have?** (days/weeks)
+
+**Optional Follow-ups (Only if needed):**
+- Is there a specific mood or feeling you want? (e.g., professional, playful, modern)
+- Any color preferences? (The AI will suggest a palette if none provided)
+- Any technical requirements or constraints? (The AI will use modern best practices by default)
+
+**The AI Should Automatically Handle:**
+- ✅ Selecting appropriate technology stack based on project type
+- ✅ Creating detailed user personas from brief descriptions
+- ✅ Expanding 3 features into complete MVP scope
+- ✅ Generating complete color palette from mood/preferences
+- ✅ Determining team size and skill level from timeline
+- ✅ Suggesting design system and components
+- ✅ Creating accessibility requirements
+- ✅ Defining responsive breakpoints
+
+---
+
+### 2. Confirm Understanding
+
+**Briefly summarize in 3-4 bullet points:**
+- Project: [Name] - [What it does]
+- Users: [Who uses it]
+- MVP: [3 core features]
+- Timeline: [Duration] 
+- Style: [Design direction - AI will suggest if not specified]
+
+**Then ask:** "Does this sound right? Should I proceed with the full PRD?"
+
+---
+
+### 3. Generate Complete PRD
+
+**Only after confirmation**, create the comprehensive PRD with:
+- Full branding, theming & color system (OKLCH)
+- Complete component inventory
+- Detailed wireframe structure
+- All sections filled with intelligent defaults
+
+**The AI must make the process smooth by:**
+- Making reasonable assumptions based on project type
+- Providing complete, production-ready specifications
+- Offering 2-3 alternatives for subjective choices (colors, fonts)
+- Using industry best practices as defaults
+- Being opinionated where it helps (but explaining why)
+
+---
+
+**Note:** The goal is to reduce cognitive load on the student. The AI should be **proactive**, not just reactive. If information is missing, make educated guesses and note them in the PRD with: `[AI Suggestion: ... You can change this to ...]`
+
+---
+
+## Project Information
+
+### Project Title
+
+**[Project Name]**
+
+---
+
+### Project Description
+
+**Short Description:**
+[1-2 sentence elevator pitch describing what the product does and its key value proposition]
+
+**Long Description:**
+[3-5 paragraphs providing comprehensive overview including:
+
+- Problem statement and context
+- Proposed solution and approach
+- Key differentiators
+- Expected impact and benefits
+- Target market or user base]
+
+---
+
+### Learning Objectives
+
+**Primary Learning Outcomes:**
+
+- [Technical skill or concept 1]
+- [Technical skill or concept 2]
+- [Technical skill or concept 3]
+- [Professional skill or practice 1]
+- [Professional skill or practice 2]
+
+**Secondary Learning Outcomes:**
+
+- [Additional skill 1]
+- [Additional skill 2]
+
+---
+
+### Technology Stack
+
+**Frontend:**
+
+- **Build Tool:** [e.g., Vite 6.x]
+- **Framework:** [e.g., React 19 with TypeScript 5]
+- **Routing:** [e.g., React Router v7]
+- **State Management:** [e.g., Zustand 5.x]
+- **Styling:** [e.g., TailwindCSS v4 + DaisyUI v5.5]
+- **Icons:** Google Icons / Material Symbols
+- **Additional Libraries:** [List specialized libraries]
+
+**Backend:**
+
+- **Runtime:** [e.g., Node.js v22 LTS]
+- **Language:** [e.g., TypeScript 5]
+- **Framework:** [e.g., Express.js v5]
+- **Database:** [e.g., MongoDB with Mongoose v9]
+
+---
+
+### MVP Scope
+
+**Phase 1: Core Platform (Days [X-Y])**
+**Priority: P0 (Must Have)**
+
+1. **[Feature Category 1]**
+   - [Specific feature 1.1]
+   - [Specific feature 1.2]
+
+2. **[Feature Category 2]**
+   - [Specific feature 2.1]
+   - [Specific feature 2.2]
+
+**Phase 2: Enhanced Features (Days [X-Y])**
+**Priority: P1 (Should Have)**
+
+3. **[Feature Category 3]**
+   - [Specific feature 3.1]
+
+**Phase 3: Advanced Features (Optional)**
+**Priority: P2 (Nice to Have)**
+
+4. **[Feature Category 4]**
+   - [Specific feature 4.1]
+
+---
+
+### Target Users / Personas
+
+**Primary Persona: [User Type 1]**
+
+- **Demographics:**
+  - Age: [range]
+  - Location: [geographic area]
+  - Occupation: [job role]
+  - Tech Savviness: [Low/Medium/High]
+
+- **Goals & Motivations:**
+  - [Primary goal 1]
+  - [Primary goal 2]
+
+- **Pain Points:**
+  - [Frustration 1]
+  - [Challenge 1]
+
+- **User Needs:**
+  - [Need 1]
+  - [Need 2]
+
+**Secondary Persona: [User Type 2]**
+[Follow same structure]
+
+---
+
+## Branding, Theming & Visual Identity
+
+### Brand Identity
+
+**Brand Name:** [Product/Company Name]
+
+**Brand Personality:**
+- **Tone:** [Professional / Friendly / Playful / Serious / Innovative / Traditional]
+- **Voice:** [Authoritative / Conversational / Educational / Inspirational]
+- **Mood:** [Energetic / Calm / Bold / Minimalist / Luxurious / Approachable]
+
+**Brand Values:**
+- [Core value 1] - [Brief description]
+- [Core value 2] - [Brief description]
+- [Core value 3] - [Brief description]
+
+**Brand Story:**
+[2-3 sentences about the brand's origin, mission, or unique perspective]
+
+---
+
+### Logo & Visual Assets
+
+**Logo Specifications:**
+- **Primary Logo:** [Description or file reference]
+- **Logo Variations:** [Dark mode, light mode, icon-only, wordmark]
+- **Safe Space:** [Minimum clear space around logo]
+- **Minimum Size:** [Smallest acceptable size in px or rem]
+- **File Formats:** [SVG, PNG, etc.]
+
+**Imagery Style:**
+- **Photography:** [Style - e.g., authentic, editorial, abstract, lifestyle]
+- **Illustrations:** [Style - e.g., flat, isometric, hand-drawn, geometric]
+- **Icons:** [Google Material Symbols - Outlined/Filled/Rounded/Sharp]
+- **Patterns/Textures:** [Description of any brand patterns]
+
+---
+
+### Color System (OKLCH)
+
+**Understanding OKLCH:**
+OKLCH is a perceptual color space that provides:
+- **L (Lightness):** 0-100% (0 = black, 100 = white)
+- **C (Chroma):** 0-0.4 (0 = grayscale, higher = more vibrant)
+- **H (Hue):** 0-360 degrees (color wheel position)
+
+**Color Palette Definition:**
+
+#### Primary Brand Color
+```css
+--color-primary: oklch([L]% [C] [H]);
+--color-primary-content: oklch([L]% [C] [H]);
+```
+
+**Example:** `oklch(60% 0.22 250)` - Vibrant blue
+- **Usage:** Primary CTAs, links, brand moments, key actions
+- **Meaning:** [What this color represents for your brand]
+- **Accessibility:** Contrast ratio with base-100: [X.X:1]
+
+**Color Variations:**
+- Lighter: `oklch(75% 0.20 250)` - Hover states, backgrounds
+- Darker: `oklch(45% 0.24 250)` - Active states, emphasis
+
+---
+
+#### Secondary Brand Color
+```css
+--color-secondary: oklch([L]% [C] [H]);
+--color-secondary-content: oklch([L]% [C] [H]);
+```
+
+**Example:** `oklch(70% 0.18 50)` - Warm orange
+- **Usage:** Secondary CTAs, accents, supporting elements
+- **Meaning:** [What this color represents]
+- **Accessibility:** Contrast ratio with base-100: [X.X:1]
+
+---
+
+#### Accent Color
+```css
+--color-accent: oklch([L]% [C] [H]);
+--color-accent-content: oklch([L]% [C] [H]);
+```
+
+**Example:** `oklch(65% 0.20 300)` - Purple accent
+- **Usage:** Highlights, badges, special features, notifications
+- **Meaning:** [What this color represents]
+- **Accessibility:** Contrast ratio with base-100: [X.X:1]
+
+---
+
+#### Neutral Colors
+```css
+--color-neutral: oklch([L]% [C] [H]);
+--color-neutral-content: oklch([L]% [C] [H]);
+```
+
+**Example:** `oklch(35% 0.02 240)` - Dark gray
+- **Usage:** Text, borders, subtle UI elements
+- **Meaning:** Foundation for readable interface
+
+---
+
+#### Base Colors (Backgrounds & Surfaces)
+```css
+--color-base-100: oklch([L]% [C] [H]); /* Main background */
+--color-base-200: oklch([L]% [C] [H]); /* Slightly darker - cards, panels */
+--color-base-300: oklch([L]% [C] [H]); /* Even darker - dividers, borders */
+--color-base-content: oklch([L]% [C] [H]); /* Primary text color */
+```
+
+**Example (Light Theme):**
+```css
+--color-base-100: oklch(98% 0.01 120); /* Nearly white background */
+--color-base-200: oklch(95% 0.02 120); /* Light gray panels */
+--color-base-300: oklch(90% 0.03 120); /* Subtle borders */
+--color-base-content: oklch(25% 0.015 120); /* Dark text */
+```
+
+---
+
+#### Semantic Colors
+
+**Info:**
+```css
+--color-info: oklch(70% 0.15 240); /* Blue for informational */
+--color-info-content: oklch(100% 0 0);
+```
+- **Usage:** Info messages, help text, tooltips
+
+**Success:**
+```css
+--color-success: oklch(70% 0.18 145); /* Green for success */
+--color-success-content: oklch(20% 0.05 145);
+```
+- **Usage:** Success messages, confirmations, positive states
+
+**Warning:**
+```css
+--color-warning: oklch(80% 0.17 80); /* Yellow/amber for warnings */
+--color-warning-content: oklch(25% 0.05 80);
+```
+- **Usage:** Warning messages, cautions, alerts
+
+**Error:**
+```css
+--color-error: oklch(65% 0.20 25); /* Red for errors */
+--color-error-content: oklch(100% 0 0);
+```
+- **Usage:** Error messages, validation failures, destructive actions
+
+---
+
+### Color Usage Guidelines
+
+**Do's:**
+- ✅ Use primary color for main CTAs and important actions
+- ✅ Use secondary color to complement primary, not compete
+- ✅ Use accent sparingly for emphasis and highlights
+- ✅ Use semantic colors consistently (green = success, red = error)
+- ✅ Ensure all text meets WCAG 2.1 AA contrast requirements
+- ✅ Test colors in both light and dark modes (if applicable)
+
+**Don'ts:**
+- ❌ Don't use more than 3-4 colors in a single view
+- ❌ Don't use color as the only indicator (add icons/text)
+- ❌ Don't override semantic color meanings
+- ❌ Don't use low-contrast color combinations
+- ❌ Don't use pure black (#000000) for text (use base-content)
+
+---
+
+### Color Accessibility Matrix
+
+| Text Color | Background | Contrast Ratio | WCAG Level | Use Case |
+|------------|------------|----------------|------------|----------|
+| base-content | base-100 | [X.X:1] | [AA/AAA] | Body text |
+| primary-content | primary | [X.X:1] | [AA/AAA] | Primary buttons |
+| secondary-content | secondary | [X.X:1] | [AA/AAA] | Secondary buttons |
+| error-content | error | [X.X:1] | [AA/AAA] | Error messages |
+
+**Testing Tools:**
+- [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/)
+- [Accessible Colors](https://accessible-colors.com/)
+- Browser DevTools Accessibility Panel
+
+---
+
+### Dark Mode Considerations (if applicable)
+
+**Dark Theme Colors:**
+```css
+@plugin "daisyui/theme" {
+  name: "[theme-name]-dark";
+  prefersdark: true;
+  color-scheme: "dark";
+  
+  --color-base-100: oklch(20% 0.02 240); /* Dark background */
+  --color-base-200: oklch(25% 0.03 240);
+  --color-base-300: oklch(30% 0.04 240);
+  --color-base-content: oklch(90% 0.02 240); /* Light text */
+  
+  /* Adjust other colors for dark mode visibility */
+  --color-primary: oklch(65% 0.22 250); /* Slightly lighter */
+  /* ... */
+}
+```
+
+**Dark Mode Strategy:**
+- [Auto (system preference) / Toggle / Always Light / Always Dark]
+- [How colors adapt between light and dark modes]
+
+---
+
+### Visual Hierarchy & Emphasis
+
+**Color-Based Hierarchy:**
+1. **Primary Actions:** Primary color (highest visual weight)
+2. **Secondary Actions:** Secondary color or neutral outline
+3. **Tertiary Actions:** Ghost or link style
+4. **Text Hierarchy:** 
+   - base-content (primary text)
+   - base-content/70 (secondary text)
+   - base-content/50 (tertiary text)
+
+**Example Color Application:**
+```tsx
+{/* Primary CTA */}
+<button className="btn btn-primary">Get Started</button>
+
+{/* Secondary action */}
+<button className="btn btn-secondary">Learn More</button>
+
+{/* Tertiary action */}
+<button className="btn btn-ghost">Cancel</button>
+
+{/* Text hierarchy */}
+<h1 className="text-base-content">Primary Heading</h1>
+<p className="text-base-content/70">Supporting description</p>
+<span className="text-base-content/50">Metadata or timestamp</span>
+```
+
+---
+
+## UI/UX Design System
+
+### Design Principles
+
+- **Consistency:** [Approach to maintaining visual/behavioral consistency]
+- **Accessibility:** [Accessibility-first design approach]
+- **Responsiveness:** [Mobile-first or adaptive approach]
+- **Modularity:** [Component composition philosophy]
+- **Reusability:** [DRY principles and component abstraction]
+
+---
+
+### DaisyUI 5 Theme Configuration
+
+**Complete Theme Definition:**
+
+```css
+@plugin "daisyui/theme" {
+  name: "[theme-name]";
+  default: true;
+  prefersdark: false;
+  color-scheme: "light";
+  
+  /* Base Colors */
+  --color-base-100: oklch([L]% [C] [H]);  /* Main background */
+  --color-base-200: oklch([L]% [C] [H]);  /* Slightly darker */
+  --color-base-300: oklch([L]% [C] [H]);  /* Even darker */
+  --color-base-content: oklch([L]% [C] [H]); /* Text color */
+  
+  /* Primary Brand Color */
+  --color-primary: oklch([L]% [C] [H]);
+  --color-primary-content: oklch([L]% [C] [H]);
+  
+  /* Secondary Brand Color */
+  --color-secondary: oklch([L]% [C] [H]);
+  --color-secondary-content: oklch([L]% [C] [H]);
+  
+  /* Accent Color */
+  --color-accent: oklch([L]% [C] [H]);
+  --color-accent-content: oklch([L]% [C] [H]);
+  
+  /* Neutral Color */
+  --color-neutral: oklch([L]% [C] [H]);
+  --color-neutral-content: oklch([L]% [C] [H]);
+  
+  /* Semantic Colors */
+  --color-info: oklch([L]% [C] [H]);
+  --color-info-content: oklch([L]% [C] [H]);
+  --color-success: oklch([L]% [C] [H]);
+  --color-success-content: oklch([L]% [C] [H]);
+  --color-warning: oklch([L]% [C] [H]);
+  --color-warning-content: oklch([L]% [C] [H]);
+  --color-error: oklch([L]% [C] [H]);
+  --color-error-content: oklch([L]% [C] [H]);
+  
+  /* Border Radius */
+  --radius-selector: [value]rem;  /* Radio buttons, checkboxes */
+  --radius-field: [value]rem;     /* Input fields */
+  --radius-box: [value]rem;       /* Cards, containers */
+  
+  /* Sizing */
+  --size-selector: [value]rem;
+  --size-field: [value]rem;
+  
+  /* Effects */
+  --border: [value]px;
+  --depth: [0-10];     /* Shadow depth */
+  --noise: [0-10];     /* Noise texture intensity */
+}
+```
+
+**Theme Application in Code:**
+
+```tsx
+// In your HTML
+<html data-theme="[theme-name]">
+
+// Or toggle programmatically
+document.documentElement.setAttribute('data-theme', '[theme-name]');
+
+// With Tailwind classes
+<button className="btn btn-primary">Primary Button</button>
+<div className="card bg-base-100 shadow-lg">Content</div>
+```
+
+---
+
+### Typography
+
+**Google Fonts Integration:**
+
+```html
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=[Font1]:wght@[weights]&family=[Font2]:wght@[weights]&display=swap" rel="stylesheet">
+```
+
+**Font System:**
+
+**Primary Font (Headings):**
+
+- **Font Family:** [Google Font Name]
+- **Weights:** [400, 500, 600, 700]
+- **Usage:** Headings (H1-H6), buttons, navigation
+- **Characteristics:** [Bold, modern, readable]
+
+**Secondary Font (Body):**
+
+- **Font Family:** [Google Font Name]
+- **Weights:** [300, 400, 500, 600]
+- **Usage:** Body text, paragraphs, descriptions
+- **Characteristics:** [Highly readable, neutral]
+
+**Typography Scale:**
+
+```css
+/* Heading Styles */
+H1: [size]px / [line-height]px - font-weight: [weight]
+H2: [size]px / [line-height]px - font-weight: [weight]
+H3: [size]px / [line-height]px - font-weight: [weight]
+H4: [size]px / [line-height]px - font-weight: [weight]
+H5: [size]px / [line-height]px - font-weight: [weight]
+H6: [size]px / [line-height]px - font-weight: [weight]
+
+/* Body Styles */
+Body Large: [size]px / [line-height]px - font-weight: [weight]
+Body Regular: [size]px / [line-height]px - font-weight: [weight]
+Body Small: [size]px / [line-height]px - font-weight: [weight]
+
+/* UI Elements */
+Button Text: [size]px / [line-height]px - font-weight: [weight]
+Label: [size]px / [line-height]px - font-weight: [weight]
+Caption: [size]px / [line-height]px - font-weight: [weight]
+```
+
+**Responsive Typography:**
+
+- Mobile: [H1 size reduction, body text minimums]
+- Tablet: [Medium sizes]
+- Desktop: [Full sizes as defined above]
+
+---
+
+### Icons - Google Material Symbols
+
+**Integration:**
+
+```html
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+```
+
+**Icon Variant:** [Outlined / Filled / Rounded / Sharp]
+
+**Icon Usage:**
+
+| Category | Icon Names |
+|----------|-----------|
+| **Navigation** | home, menu, close, arrow_back, arrow_forward, chevron_left, chevron_right |
+| **Actions** | search, add, edit, delete, save, check, refresh, download, upload, share |
+| **User** | person, account_circle, group, login, logout |
+| **Communication** | mail, chat, notifications, phone, message, comment |
+| **Status** | check_circle, error, warning, info, help, star, favorite |
+| **[Category]** | [icon names] |
+
+**Icon Sizes:**
+
+- Small: 16px (inline with text)
+- Medium: 20px (buttons, UI elements)
+- Large: 24px (prominent actions)
+- XL: 32px (feature icons, empty states)
+
+**Icon Component:**
+
+```tsx
+interface IconProps {
+  name: string;
+  size?: 'sm' | 'md' | 'lg' | 'xl';
+  className?: string;
+  ariaLabel?: string;
+}
+
+const Icon = ({ name, size = 'md', className = '', ariaLabel }: IconProps) => {
+  const sizes = {
+    sm: 'text-base',
+    md: 'text-xl',
+    lg: 'text-2xl',
+    xl: 'text-4xl',
+  };
+  
+  return (
+    <span
+      className={`material-symbols-outlined ${sizes[size]} ${className}`}
+      aria-label={ariaLabel}
+      aria-hidden={!ariaLabel}
+    >
+      {name}
+    </span>
+  );
+};
+```
+
+---
+
+### Responsive Design
+
+**Breakpoint System:**
+
+```tsx
+const breakpoints = {
+  sm: '640px',   // Mobile landscape
+  md: '768px',   // Tablets
+  lg: '1024px',  // Laptops
+  xl: '1280px',  // Desktops
+  '2xl': '1536px' // Large desktops
+};
+```
+
+**Layout Patterns:**
+
+**Desktop (≥1280px):**
+
+- Multi-column layouts (2-4 columns)
+- Full navigation bar
+- Sidebar visible
+- Large images and spacing
+
+**Tablet (768px - 1279px):**
+
+- 2-column layouts
+- Collapsible sidebar
+- Touch-friendly elements (min 44px)
+- Reduced spacing
+
+**Mobile (<768px):**
+
+- Single column stacked layout
+- Hamburger menu
+- Full-width buttons
+- Optimized touch targets
+
+**Responsive Utilities:**
+
+```tsx
+/* Grid Layout */
+<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+
+/* Typography */
+<h1 className="text-2xl md:text-3xl lg:text-4xl">
+
+/* Spacing */
+<section className="py-8 md:py-12 lg:py-16 px-4 md:px-6 lg:px-8">
+
+/* Visibility */
+<div className="block md:hidden">Mobile only</div>
+<div className="hidden md:block">Desktop only</div>
+```
+
+---
+
+### Accessibility Requirements
+
+**WCAG 2.1 AA Compliance Checklist:**
+
+**Perceivable:**
+
+- [ ] All images have descriptive alt text
+- [ ] Color contrast ratio ≥ 4.5:1 for normal text
+- [ ] Color contrast ratio ≥ 3:1 for large text (18pt+)
+- [ ] Color is not the only means of conveying information
+- [ ] Text can be resized up to 200% without loss of content
+
+**Operable:**
+
+- [ ] All functionality available via keyboard
+- [ ] No keyboard traps
+- [ ] Focus indicator is visible (2px outline minimum)
+- [ ] Skip navigation link provided
+- [ ] Clear, descriptive page titles
+- [ ] Logical focus order
+
+**Understandable:**
+
+- [ ] Language of page declared (`<html lang="en">`)
+- [ ] Consistent navigation across pages
+- [ ] Input assistance for forms (labels, instructions)
+- [ ] Error identification and suggestions
+
+**Robust:**
+
+- [ ] Valid HTML (no parsing errors)
+- [ ] ARIA used correctly (roles, states, properties)
+- [ ] Name, role, value for all UI components
+
+---
+
+## Component Design System
+
+### Component Organization Structure
+
+```
+src/
+├── components/
+│   ├── atoms/              # Basic UI elements
+│   │   ├── Button/
+│   │   ├── Input/
+│   │   ├── Badge/
+│   │   ├── Icon/
+│   │   ├── Avatar/
+│   │   └── [component]/
+│   │
+│   ├── molecules/          # Combinations of atoms
+│   │   ├── FormField/
+│   │   ├── Card/
+│   │   ├── SearchBar/
+│   │   ├── ListItem/
+│   │   └── [component]/
+│   │
+│   ├── organisms/          # Complex UI sections
+│   │   ├── Navbar/
+│   │   ├── Footer/
+│   │   ├── DataTable/
+│   │   ├── FilterSidebar/
+│   │   └── [component]/
+│   │
+│   ├── layouts/          # Page-level layouts
+│   │   ├── MainLayout/
+│   │   ├── AuthLayout/
+│   │   ├── DashboardLayout/
+│   │   └── [layout]/
+│   │
+│   └── pages/              # Route-level pages
+│       ├── Home/
+│       ├── Login/
+│       └── [page]/
+```
+
+---
+
+### Atom Components
+
+**Component Template:**
+
+```tsx
+// components/atoms/[ComponentName]/[ComponentName].tsx
+import React, { FC, HTMLAttributes } from 'react';
+
+/**
+ * Define the required and optional props for the component.
+ * We extend HTMLAttributes<[element]> for easy access to standard DOM attributes 
+ * like onClick, id, etc.
+ */
+export interface [ComponentName]Props extends HTMLAttributes<[element]> {
+    // Required props
+    /** The primary required property for this component. */
+    [requiredProp]: [type]; 
+
+    // Optional props
+    /** An optional property with a specified default value. */
+    [optionalProp]?: [type];
+
+    // Common attributes (inherited from HTMLAttributes but can be specified here for clarity)
+    /** Additional CSS classes to apply to the component. */
+    className?: string;
+    /** The content to be rendered inside the component. */
+    children?: React.ReactNode;
+}
+
+/**
+ * [ComponentName] is a versatile UI component built with React and TypeScript.
+ * @param props - The properties object conforming to [ComponentName]Props.
+ * @returns A React element.
+ */
+export const [ComponentName]: FC<[ComponentName]Props> = ({
+    // Required prop - must be destructured
+    [requiredProp],
+    
+    // Optional prop with a default value
+    [optionalProp] = [defaultValue], 
+    
+    // Default values for common props
+    className = '',
+    children,
+    
+    // Collect all other standard HTML attributes
+    ...props
+}) => {
+    // Determine the base classes for the component
+    const baseClasses = '[base-classes]';
+    
+    return (
+        <[element]
+            className={`${baseClasses} ${className}`}
+            {...props} // Spreads all remaining standard HTML attributes
+        >
+            {children}
+        </[element]>
+    );
+};
+```
+
+---
+
+**Example: Button Component**
+
+```tsx
+// components/atoms/Button/Button.tsx
+import React from 'react';
+
+export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+  variant?: 'primary' | 'secondary' | 'outline' | 'ghost' | 'link';
+  size?: 'sm' | 'md' | 'lg';
+  loading?: boolean;
+  disabled?: boolean;
+  fullWidth?: boolean;
+  icon?: React.ReactNode;
+  iconPosition?: 'left' | 'right';
+  children: React.ReactNode;
+}
+
+export const Button = ({
+  variant = 'primary',
+  size = 'md',
+  loading = false,
+  disabled = false,
+  fullWidth = false,
+  icon,
+  iconPosition = 'left',
+  children,
+  className = '',
+  type = 'button',
+  ...props
+}: ButtonProps) => {
+  const variantClasses = {
+    primary: 'btn-primary',
+    secondary: 'btn-secondary',
+    outline: 'btn-outline',
+    ghost: 'btn-ghost',
+    link: 'btn-link',
+  };
+  
+  const sizeClasses = {
+    sm: 'btn-sm',
+    md: '',
+    lg: 'btn-lg',
+  };
+  
+  return (
+    <button
+      type={type}
+      className={`btn ${variantClasses[variant]} ${sizeClasses[size]} ${fullWidth ? 'btn-block' : ''} ${className}`}
+      disabled={disabled || loading}
+      aria-busy={loading}
+      aria-disabled={disabled || loading}
+      {...props}
+    >
+      {loading && <span className="loading loading-spinner loading-sm" />}
+      {!loading && icon && iconPosition === 'left' && <span className="mr-2">{icon}</span>}
+      <span>{children}</span>
+      {!loading && icon && iconPosition === 'right' && <span className="ml-2">{icon}</span>}
+    </button>
+  );
+};
+```
+
+---
+
+**Atom Components Inventory (examples, determine the actual components from the PRD contents):**
+
+| Component | Purpose | Key Props | States | Accessibility |
+|-----------|---------|-----------|--------|---------------|
+| **Button** | Action triggers | variant, size, loading, disabled, icon | default, hover, active, focus, loading, disabled | ARIA labels, keyboard accessible, focus visible |
+| **Input** | Text input | type, value, error, disabled, placeholder | default, focus, error, disabled | Label association, error announcement |
+| **Badge** | Status indicators | variant, size | default | ARIA live for status changes |
+| **Icon** | Visual symbols | name, size, color, ariaLabel | default | ARIA hidden or labeled |
+| **Avatar** | User representations | src, alt, size, fallback | default, loading, error | Alt text required |
+| **Checkbox** | Boolean selections | checked, disabled, indeterminate | unchecked, checked, indeterminate | Native semantics |
+| **Radio** | Single selections | checked, disabled, name, value | unchecked, checked | Grouped with fieldset |
+| **Toggle** | Binary switches | checked, disabled | off, on | ARIA switch role |
+| **Link** | Navigation | href, external, disabled | default, hover, visited, focus | External indication |
+| **Tooltip** | Contextual help | content, placement | hidden, visible | ARIA describedby |
+
+---
+
+### Molecule Components
+
+**Example: FormField Component**
+
+```tsx
+// components/molecules/FormField/FormField.tsx
+import React, { FC } from 'react';
+
+export interface FormFieldProps extends Omit<InputProps, 'id'> {
+  label: string;
+  name: string;
+  error?: string;
+  helperText?: string;
+  required?: boolean;
+}
+
+export const FormField: FC<FormFieldProps> = ({
+  label,
+  name,
+  error,
+  helperText,
+  required = false,
+  ...inputProps
+}) => {
+  const inputId = `field-${name}`;
+  const errorId = error ? `${inputId}-error` : undefined;
+  const helperId = helperText ? `${inputId}-helper` : undefined;
+  
+  return (
+    <div className="form-control w-full">
+      <label htmlFor={inputId} className="label">
+        <span className="label-text">
+          {label}
+          {required && <span className="text-error ml-1" aria-label="required">*</span>}
+        </span>
+      </label>
+      
+      <Input
+        id={inputId}
+        name={name}
+        required={required}
+        error={!!error}
+        aria-invalid={!!error}
+        aria-describedby={[errorId, helperId].filter(Boolean).join(' ') || undefined}
+        {...inputProps}
+      />
+      
+      {(error || helperText) && (
+        <label className="label">
+          {error && (
+            <span id={errorId} className="label-text-alt text-error" role="alert">
+              {error}
+            </span>
+          )}
+          {!error && helperText && (
+            <span id={helperId} className="label-text-alt">
+              {helperText}
+            </span>
+          )}
+        </label>
+      )}
+    </div>
+  );
+};
+```
+
+---
+
+**Molecule Components Inventory (examples, determine the actual components from the PRD contents):**
+
+| Component | Combines | Purpose | Key Props | Accessibility |
+|-----------|----------|---------|-----------|---------------|
+| **FormField** | Label + Input + Error | Form input with label | label, name, error, required | Proper associations, error announcement |
+| **Card** | Image + Text + Button | Content container | title, image, actions, hoverable | Semantic structure, focus management |
+| **SearchBar** | Input + Icon + Button | Search interface | value, onSearch, placeholder | Search landmark |
+| **ListItem** | Avatar + Text + Actions | List entries | avatar, title, subtitle, actions | Keyboard navigation, ARIA roles |
+| **Modal** | Overlay + Card + Actions | Dialog boxes | isOpen, onClose, title, footer | Focus trap, ESC close, ARIA modal |
+| **Dropdown** | Button + Menu + Items | Selection menus | items, value, onChange | Keyboard navigation |
+| **Alert** | Icon + Text + Button | Notifications | variant, title, dismissible | ARIA live regions |
+| **Pagination** | Buttons + Text | Page navigation | currentPage, totalPages, onChange | ARIA labels |
+
+---
+
+### Organism Components
+
+**Example: Navbar Component**
+
+```tsx
+// components/organisms/Navbar/Navbar.tsx
+import React, { useState, FC } from 'react';
+import { Link } from 'react-router-dom';
+import { Button } from '@/components/atoms/Button';
+import { Avatar } from '@/components/atoms/Avatar';
+
+export interface UserProfile {
+  name: string;
+  avatar?: string;
+  role: string;
+}
+
+export interface NavbarProps {
+  user?: UserProfile;
+  onLogout?: () => void;
+}
+
+export const Navbar: FC<NavbarProps> = ({ user, onLogout }) => {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  
+  return (
+    <nav className="navbar bg-base-100 shadow-lg" role="navigation" aria-label="Main navigation">
+      <div className="navbar-start">
+        <Link to="/" className="btn btn-ghost text-xl font-bold">
+          <span className="sr-only">Home - </span>
+          [Brand Name]
+        </Link>
+      </div>
+      
+      <div className="navbar-center hidden lg:flex">
+        <ul className="menu menu-horizontal px-1" role="menubar">
+          <li role="none">
+            <Link to="/features" role="menuitem">Features</Link>
+          </li>
+          <li role="none">
+            <Link to="/about" role="menuitem">About</Link>
+          </li>
+        </ul>
+      </div>
+      
+      <div className="navbar-end gap-2">
+        {user ? (
+          <Avatar src={user.avatar} alt={user.name} size="md" />
+        ) : (
+          <>
+            <Button variant="ghost" asChild>
+              <Link to="/login">Sign In</Link>
+            </Button>
+            <Button variant="primary" asChild>
+              <Link to="/signup">Sign Up</Link>
+            </Button>
+          </>
+        )}
+        
+        <button
+          className="btn btn-ghost lg:hidden"
+          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          aria-expanded={mobileMenuOpen}
+          aria-label="Toggle mobile menu"
+        >
+          <span className="material-symbols-outlined">menu</span>
+        </button>
+      </div>
+    </nav>
+  );
+};
+```
+
+---
+
+**Organism Components Inventory (examples, determine the actual components from the PRD contents):**
+
+| Component | Purpose | Complexity | Key Features | Accessibility |
+|-----------|---------|------------|--------------|---------------|
+| **Navbar** | Site navigation | High | Logo, links, user menu, mobile toggle | Skip links, keyboard nav, ARIA landmarks |
+| **Footer** | Site footer | Medium | Links, social, newsletter | Semantic structure |
+| **Sidebar** | Side navigation | Medium | Collapsible, nested items | ARIA tree, keyboard navigation |
+| **DataTable** | Tabular data | High | Sorting, filtering, pagination, actions | ARIA table, sortable headers |
+| **FilterPanel** | Data filtering | Medium | Multiple filter types | Form semantics, live regions |
+| **Hero** | Landing section | Low | Image, heading, CTA | Semantic headings |
+| **ProductGrid** | Product listings | Medium | Grid layout, lazy loading | Grid semantics |
+| **Timeline** | Event sequences | Medium | Chronological display | Ordered list semantics |
+
+---
+
+### Layout Components (Templates)
+
+**Example: MainLayout**
+
+```tsx
+// components/templates/MainLayout/MainLayout.tsx
+import React, { FC } from 'react';
+import { Navbar } from '@/components/organisms/Navbar';
+import { Footer } from '@/components/organisms/Footer';
+
+export type ContainerWidth = 'full' | 'container' | 'narrow';
+
+export interface MainLayoutProps {
+  children: React.ReactNode;
+  showFooter?: boolean;
+  containerWidth?: ContainerWidth;
+}
+
+export const MainLayout: FC<MainLayoutProps> = ({
+  children,
+  showFooter = true,
+  containerWidth = 'container',
+}) => {
+  const containerClasses: Record<ContainerWidth, string> = {
+    full: 'w-full',
+    container: 'container mx-auto px-4',
+    narrow: 'max-w-4xl mx-auto px-4',
+  };
+  
+  return (
+    <div className="min-h-screen flex flex-col bg-base-200">
+      <a href="#main-content" className="sr-only focus:not-sr-only">
+        Skip to main content
+      </a>
+      
+      <Navbar />
+      
+      <main id="main-content" className="flex-1 py-8" role="main">
+        <div className={containerClasses[containerWidth]}>
+          {children}
+        </div>
+      </main>
+      
+      {showFooter && <Footer />}
+    </div>
+  );
+};
+```
+
+---
+
+**Layout Components Inventory (examples, determine the actual components from the PRD contents):**
+
+| Layout | Purpose | Structure | Use Cases |
+|--------|---------|-----------|-----------|
+| **MainLayout** | Standard pages | Navbar + Content + Footer | Public pages, general content |
+| **AuthLayout** | Authentication | Centered form + background | Login, signup, password reset |
+| **DashboardLayout** | User dashboard | Sidebar + Header + Content | User account, settings |
+| **AdminLayout** | Admin panel | Sidebar + Topbar + Content | Admin CRUD, analytics |
+| **LandingLayout** | Marketing pages | Full-width sections | Homepage, landing pages |
+| **ErrorLayout** | Error pages | Centered message | 404, 500 errors |
+
+---
+
+### Page Components
+
+**Example: HomePage**
+
+```tsx
+// components/pages/Home/Home.tsx
+import React, { FC } from 'react';
+import { MainLayout } from '@/components/templates/MainLayout';
+import { Hero } from '@/components/organisms/Hero';
+import { FeatureGrid } from '@/components/organisms/FeatureGrid';
+
+export const HomePage: FC = () => {
+  return (
+    <MainLayout>
+      <Hero
+        title="Welcome to [Product Name]"
+        subtitle="[Value proposition]"
+        primaryAction={{ label: 'Get Started', href: '/signup' }}
+        image="/images/hero.jpg"
+      />
+      
+      <section className="py-16">
+        <h2 className="text-3xl font-bold text-center mb-12">
+          Key Features
+        </h2>
+        <FeatureGrid
+          features={[
+            { icon: 'feature1', title: 'Feature 1', description: '...' },
+            { icon: 'feature2', title: 'Feature 2', description: '...' },
+          ]}
+        />
+      </section>
+    </MainLayout>
+  );
+};
+```
+
+---
+
+**Page Components Inventory (examples, determine the actual components from the PRD contents):**
+
+| Page | Route | Layout | Key Sections | Purpose |
+|------|-------|--------|--------------|---------|
+| **HomePage** | `/` | MainLayout | Hero, Features, CTA | Landing page |
+| **LoginPage** | `/login` | AuthLayout | Login form | Authentication |
+| **SignUpPage** | `/signup` | AuthLayout | Registration form | User registration |
+| **DashboardPage** | `/dashboard` | DashboardLayout | Stats, activity | User overview |
+| **ProfilePage** | `/profile` | DashboardLayout | User info, settings | Profile management |
+| **NotFoundPage** | `*` | ErrorLayout | 404 message | Error handling |
+
+---
+
+### Component Development Guidelines
+
+**Creation Checklist:**
+
+- [ ] Create component file with TypeScript interface
+- [ ] Implement accessibility requirements (ARIA, semantic HTML)
+- [ ] Add responsive design classes
+- [ ] Create test file with unit tests
+- [ ] Document props and usage
+- [ ] Export from index.ts
+
+**Naming Conventions:**
+
+- **Files:** PascalCase (`Button.tsx`)
+- **Components:** PascalCase (`Button`)
+- **Props Interfaces:** `[ComponentName]Props`
+- **Variants:** lowercase with hyphens (`'primary'`, `'outline'`)
+
+**Accessibility Requirements:**
+
+- All interactive elements keyboard accessible
+- Use semantic HTML elements
+- Provide ARIA labels for icon-only buttons
+- Ensure color contrast meets WCAG 2.1 AA
+- Include focus visible states
+- Support screen readers
+
+---
+
+## Google Stitch Wireframe Structure
+
+### Wireframe Template (Per Page)
+
+**[Page Name] (`/[route]`)**
+
+**Purpose:** [Brief description of page purpose]
+
+**Layout Type:** [Desktop layout / Mobile layout]
+
+**Block Structure:**
+
+- **Block 1 - [Section Name]:**
+  - **Component Type:** [Hero, Grid, Form, etc.]
+  - **Elements:**
+    - [Element 1]: [Specification]
+    - [Element 2]: [Specification]
+  - **Placeholder Content:** [Description]
+  - **Responsive Behavior:** [Mobile changes]
+
+- **Block 2 - [Section Name]:**
+  - **Component Type:** [Description]
+  - **Elements:** [List]
+
+**Navigation:**
+
+- **Entry Points:** [How users reach this page]
+- **Exit Points:** [Where users go next]
+- **Primary CTA:** [Main action button]
+
+---
+
+**Example: Landing Page Wireframe**
+
+**Landing Page (`/`)**
+
+**Purpose:** Introduce product, capture interest, convert to sign-ups
+
+**Layout Type:** Full-width sections, centered content
+
+**Block 1 - Hero Section:**
+
+- **Component Type:** Full-width hero with background
+- **Elements:**
+  - Heading (H1): Compelling value proposition
+  - Subheading: Supporting description
+  - Primary CTA: "Get Started Free"
+  - Secondary button: "Learn More"
+  - Background image/gradient
+- **Responsive:** Stack buttons vertically on mobile
+
+**Block 2 - Features Grid:**
+
+- **Component Type:** 3-column grid (1 on mobile)
+- **Elements:**
+  - Feature cards (×3)
+  - Each: Icon, heading, description
+- **Responsive:** Stack vertically on mobile
+
+**Block 3 - CTA Section:**
+
+- **Component Type:** Centered call-to-action
+- **Elements:**
+  - Heading: "Ready to start?"
+  - Button: "Sign Up Now"
+- **Background:** Colored section
+
+---
+
+### Responsive Constraints
+
+**Desktop (≥1280px):**
+
+- Multi-column layouts
+- Full navigation
+- Large images
+
+**Tablet (768px - 1279px):**
+
+- 2-column layouts
+- Touch-friendly (min 44px)
+- Collapsible sidebar
+
+**Mobile (<768px):**
+
+- Single column
+- Hamburger menu
+- Full-width buttons
+
+---
+
+### Wireframe Export Instructions
+
+1. **Export Screenshots:**
+   - Desktop (1920px)
+   - Tablet (768px)
+   - Mobile (375px)
+
+2. **Document:**
+   - Label interactive elements
+   - Specify colors, spacing
+   - Note hover states
+
+3. **Create Component Map:**
+   - List all components used
+   - Map to code components
+
+4. **Share:**
+   - Provide view access
+   - Include in documentation
+
+---
+
+**End of Simplified Template**
