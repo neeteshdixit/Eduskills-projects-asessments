@@ -1,35 +1,57 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
 }
 
-body{
+body {
     background-color: #f0f1f7;
-    color: white;
+    color: black;
 }
 
 /* HEADER */
-.header{
+.header {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
     background-color: #f9fbff;
 }
-.navbar{
-    display:flex;
-    justify-content: flex-end;
+
+.chat-version select {
+    padding: 6px 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.navbar {
+    display: flex;
     align-items: center;
 }
-.menu{
+
+.menu {
     display: flex;
-    justify-content: center;
-    justify-items: center;
+    gap: 15px;
     list-style: none;
 }
 
+.menu a {
+    text-decoration: none;
+    color: black;
+}
+
+.menu button {
+    padding: 6px 12px;
+    border-radius: 6px;
+    border: none;
+    background-color: #000;
+    color: white;
+    cursor: pointer;
+}
 
 /* CENTER TEXT */
-.para{
+.para {
     height: 70vh;
     display: flex;
     justify-content: center;
@@ -37,35 +59,37 @@ body{
     color: black;
 }
 
-.para h1{
+.para h1 {
     font-size: 32px;
 }
 
 /* FOOTER */
-.footer{
+.footer {
     position: fixed;
-    bottom: 10px;
+    bottom: 15px;
     width: 100%;
 }
 
-.footer nav{
+.chat-box {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 10px;
 }
 
-.footer input{
+.chat-box input {
     width: 60%;
-    padding: 10px;
+    padding: 12px 15px;
     border-radius: 20px;
-    border: dashed;
-
+    border: 1px solid #ccc;
+    outline: none;
 }
 
-.footer button{
+.chat-box button {
     border-radius: 50%;
     padding: 8px 12px;
     border: none;
     background-color: #0f0f0f;
     color: white;
+    cursor: pointer;
 }

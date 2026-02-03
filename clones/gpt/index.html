@@ -3,43 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Chat UI</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
 <main>
+
+    <!-- HEADER -->
     <header class="header">
+
+        <div class="chat-version">
+            <select name="chatgpt" id="select">
+                <option value="CHATGPT 5.2">CHATGPT 5.2</option>
+                <option value="Chatgpt_plus">ChatGPT Plus</option>
+                <option value="GPT 5.2">GPT 5.2</option>
+            </select>
+        </div>
+
         <nav class="navbar">
             <ul class="menu">
-                <li>
-                    <select name="Chatgpt" id="select">
-                       <option value="CHATGPT 5.2">CHATGPT 5.2</option>
-                       <option value="Chatgpt_plus">Chatgpt plus </option>
-                       <option value="GPT 5.2">GPT 5.2</option>
-                    </select>
-                </li>
-                <li><a href="">Contact us</a></li>
-                <li><button>login/signup</button></li>
+                <li><a href="#">Contact us</a></li>
+                <li><button>Login / Signup</button></li>
             </ul>
         </nav>
+
     </header>
 
 
+    <!-- MAIN TEXT -->
+    <section class="para">
+        <h1>Where should we begin?</h1>
+    </section>
 
-    <div class="para"><h1>Where should we begin ?</h1></div>
 
-
-
+    <!-- FOOTER -->
     <footer class="footer">
-        <nav class="nav">
-        <button>+</button>
-        <input type="text" id ="Chat" name = "Chatbox" placeholder="Ask anything">
-        <button>🎤</button>
-        <button>🔊</button>
-        </nav>
+        <form class="chat-box">
+            <button type="button">+</button>
+            <input type="text" id="chat" name="chatbox" placeholder="Ask anything">
+            <button type="button">🎤</button>
+            <button type="button">🔊</button>
+        </form>
     </footer>
 
-
 </main>
+
 </body>
 </html>
