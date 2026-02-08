@@ -1,0 +1,75 @@
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 15px;
+    border-bottom: 1px solid #ccc;
+    background-color: white;
+}
+.Main{
+    display: flex;
+}
+.aside{
+    display: flex;
+}
+.whole{
+    display: flex;
+}
+.youtube_image,
+.ism,
+.cwp {
+    display: flex;
+    align-items: center;
+}
+
+.ism {
+    gap: 10px;
+}
+
+.cwp {
+    gap: 15px;
+}
+
+/* Search bar */
+.search_bar {
+    display: flex;
+    align-items: center;
+}
+
+.search_bar input {
+    width: 300px;
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 20px 0 0 20px;
+    outline: none;
+}
+
+.search_bar button {
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    border-left: none;
+    background: #f8f8f8;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+}
+
+/* Mic button */
+.mic_btn {
+    border: none;
+    background: #f1f1f1;
+    border-radius: 50%;
+    padding: 6px;
+    cursor: pointer;
+}
+
+/* Create button */
+.create_btn {
+    padding: 6px 12px;
+    border: none;
+    background: #f1f1f1;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+

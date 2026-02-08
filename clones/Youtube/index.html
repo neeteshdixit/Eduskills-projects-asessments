@@ -5,19 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Youtube</title>
     <link rel="shortcut icon" href="image.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="sidebar"></div>
-    <nav>
-        <div class="youtube_image"><img src="youtubeimage.png" alt="youtube image" height="70px"></div>
-        <div class="search_bar"><input type="text" placeholder="Search"><button><img src="search.jpeg" alt="search" height="15px" width="20px"></button></div>
-        <div class="create"><button><img src="create me.png" alt="create" height="50px" width="110px"></button></div>
-        <div class="well_icon">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
-            <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2M8 1.918l-.797.161A4 4 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4 4 0 0 0-3.203-3.92zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5 5 0 0 1 13 6c0 .88.32 4.2 1.22 6"/>
+
+<nav class="navbar">
+
+    <!-- Logo -->
+    <div class="youtube_image">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+</svg>
+        <img src="youtubeimage.png" alt="youtube image" height="50px">
+    </div>
+
+    <!-- Search section -->
+    <div class="ism">
+        <div class="search_bar">
+            <input type="text" placeholder="Search">
+            <button>
+                <img src="se.jpg" alt="search" height="15px">
+            </button>
+        </div>
+
+        <button class="mic_btn">
+            <img src="mike.png" alt="mike" height="18px">
+        </button>
+    </div>
+
+    <!-- Right side -->
+    <div class="cwp">
+        <button class="create_btn">+ Create</button>
+
+        <!-- Bell -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2"/>
+            <path d="M8 1.918A4 4 0 0 0 4 6c0 .628-.134 2.197-.459 3.742h8.918C12.134 8.197 12 6.628 12 6a4 4 0 0 0-4-4.082z"/>
         </svg>
-</div>
-        <div class="profile"></div>
-    </nav>
+
+        <!-- Profile -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1z"/>
+            <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+        </svg>
+    </div>
+
+</nav>
+<aside></aside>
+
+
 </body>
-</html> 
+</html>
