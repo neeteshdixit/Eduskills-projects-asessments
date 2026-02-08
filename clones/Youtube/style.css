@@ -1,4 +1,9 @@
+/* body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+} */
 
+/* Navbar */
 .navbar {
     display: flex;
     align-items: center;
@@ -6,16 +11,13 @@
     padding: 8px 15px;
     border-bottom: 1px solid #ccc;
     background-color: white;
+    position: sticky;
+    top: 0;
+    height: 30px;
+    
 }
-.Main{
-    display: flex;
-}
-.aside{
-    display: flex;
-}
-.whole{
-    display: flex;
-}
+
+/* Navbar sections */
 .youtube_image,
 .ism,
 .cwp {
@@ -23,22 +25,17 @@
     align-items: center;
 }
 
-.ism {
-    gap: 10px;
-}
+.ism { gap: 10px; }
+.cwp { gap: 15px; }
 
-.cwp {
-    gap: 15px;
-}
-
-/* Search bar */
+/* Search */
 .search_bar {
     display: flex;
     align-items: center;
 }
 
 .search_bar input {
-    width: 300px;
+    width: 350px;
     padding: 6px;
     border: 1px solid #ccc;
     border-radius: 20px 0 0 20px;
@@ -54,7 +51,7 @@
     cursor: pointer;
 }
 
-/* Mic button */
+/* Mic */
 .mic_btn {
     border: none;
     background: #f1f1f1;
@@ -63,7 +60,7 @@
     cursor: pointer;
 }
 
-/* Create button */
+/* Create */
 .create_btn {
     padding: 6px 12px;
     border: none;
@@ -72,19 +69,50 @@
     cursor: pointer;
 }
 
-.aside-bar ul{
+/* Main layout */
+.combine {
+    display: flex;
+}
+
+/* Sidebar */
+.aside-bar {
+    width: 220px;
+    min-height: 100vh;
+    border-right: 1px solid #ddd;
+    padding: 10px;
+}
+
+.aside-bar ul {
     list-style: none;
+    padding: 0;
 }
 
-.combine{
-    display: flex;
+.aside-bar li {
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 8px;
 }
 
-.first, .aside-bar{
-    display: flex;
-    justify-content: space-between;
+.aside-bar li:hover {
+    background: #f2f2f2;
 }
 
-.aside-bar{
-    border: 20px;
+/* Video section */
+.first {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Video Grid */
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.video-grid iframe {
+    width: 100%;
+    height: 180px;
+    border-radius: 10px;
+    border: none;
 }
