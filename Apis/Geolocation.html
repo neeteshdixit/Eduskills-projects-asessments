@@ -1,0 +1,42 @@
+<!-- The Geolocation API is accessed via a call to navigator.geolocation. This will cause the browser to ask the user for permission to access their location data. If the user accept, the browser will search for the best available functionality on the device to access this information (for example GPS).
+
+The getCurrentPosition() method is used to return the user's current location.
+
+The example below returns the latitude and longitude of the user's current location: -->
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+<h1>HTML Geolocation</h1>
+<p>Click the button to get your coordinates.</p>
+
+<button onclick="getLocation()">Try It</button>
+
+<p id="demo"></p>
+
+<script>
+const x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(success, error);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function success(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+}
+
+function error() {
+  alert("Sorry, no position available.");
+}
+</script>
+
+</body>
+</html>
+
