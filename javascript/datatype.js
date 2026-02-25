@@ -16,3 +16,7 @@
 // undefined
 let test 
 console.log(test)
+
+
+/// common js - if we use it we use require keyword to import module
+// es6 module - if we use it we use import keyword to import module

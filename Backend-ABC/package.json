@@ -1,12 +1,11 @@
 {
-  "name": "backend-abc",
+  "name": "backend-auth",
   "version": "1.0.0",
-  "description": "",
+  "description": "suth system",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "author": "Neetesh",
   "license": "ISC"
 }
