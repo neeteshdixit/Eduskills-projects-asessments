@@ -5,10 +5,12 @@
   "main": "index.js",
   "scripts": {
     "test": "node server.js",
-    "start": "node index.js",   
+    "start": "node index.js",
     "_comment": "ye esiliye hota hai kyuki hme pure node index.js cmd mein likhne ki bajay direct likhe npm start kar dena hai"
-
   },
   "author": "Neetesh",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
 }
