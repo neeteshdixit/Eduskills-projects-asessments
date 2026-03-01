@@ -4,20 +4,19 @@
 
 import express from "express"  // for es6 module
 import dotenv from "dotenv"
-import dbConnect from "./config/db"
+import dbConnect from "./config/db.js"
+import authRoutes from "./routes/authRoutes.js"
 
 dotenv.config()// to use env variable for project
 
 const app = express()
 
-dbConnect()// to connect database
+dbConnect() // to connect database
 
 console.log(process.env.PORT)
 //const port = 5000
 
-app.get("/", ()=>{
-    console.log("this is my route")
-})
+app.get("/auth/api",authRoutes) // to use auth routes for api
 
 app.listen(process.env.PORT, ()=>{
     console.log(`server is running at port ${process.env.PORT}`)
