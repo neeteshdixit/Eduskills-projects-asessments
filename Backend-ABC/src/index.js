@@ -22,5 +22,5 @@ app.listen(process.env.PORT, ()=>{
     console.log(`server is running at port ${process.env.PORT}`)
 })
 
-// npm install -g nodemon baar server ko restart karne ki jarurat nhi hai esiliye hum esko download karte hai globally
+// npm install -g nodemon baar baar server ko restart karne ki jarurat nhi hai esiliye hum esko download karte hai globally
 // npm install --save-dev nodemon # or using yarn: yarn add nodemon -D for dev dependency
