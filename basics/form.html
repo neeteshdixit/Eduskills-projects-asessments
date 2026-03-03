@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+</head>
+<body>
+
+<form action="" method="get">
+    <table bgcolor="#eee" align="center">
+        <caption><h1>Registration Form</h1></caption>
+        <tr>
+            <td><label for="fname">First Name</label></td>
+            <td><input type="text" maxlength="5" name="fname" id="fname"></td>
+        </tr>
+
+        <tr>
+            <td><label for="lname">Last Name</label></td>
+            <td><input type="text" name="lname" id="lname"></td>
+        </tr>
+
+        <tr>
+            <td><label for="email">Email</label></td>
+            <td><input type="email" name="email" id="email"></td>
+        </tr>
+
+        <tr>
+            <td><label for="pass">Password</label></td>
+            <td><input type="password" name="pass" id="pass"></td>
+        </tr>
+
+        <tr>
+            <td>Gender</td>
+            <td>
+                <input type="radio" name="gender" value="male" id="male">
+                <label for="male">Male</label>
+
+                <input type="radio" name="gender" value="female" id="female">
+                <label for="female">Female</label>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Skills</td>
+            <td>
+                <input type="checkbox" name="java" id="java">
+                <label for="java">Java</label>
+
+                <input type="checkbox" name="python" id="python">
+                <label for="python">Python</label>
+
+                <input type="checkbox" name="cpp" id="cpp">
+                <label for="cpp">C++</label>
+            </td>
+        </tr>
+
+        <tr>
+            <td><label for="dob">DOB</label></td>
+            <td><input type="date" name="dob" id="dob"></td>
+        </tr>
+
+        <tr>
+            <td><label for="adhar">Adhar</label></td>
+            <td><input type="file" name="adhar" id="adhar"></td>
+        </tr>
+
+        <tr>
+            <td><label for="city">City</label></td>
+            <td>
+                <select name="city" id="city">
+                    <option value="delhi">Delhi</option>
+                    <option value="mumbai">Mumbai</option>
+                    <option value="bangalore">Bangalore</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td><label for="comment">Comment</label></td>
+            <td>
+                <textarea name="comment" id="comment" cols="20" rows="5"></textarea>
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2" align="center">
+                <input type="submit" value="Register">
+                <input type="reset" value="Reset">
+            </td>
+        </tr>
+
+    </table>
+</form>
+
+</body>
+</html>
