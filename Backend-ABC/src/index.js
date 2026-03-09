@@ -14,9 +14,11 @@ const app = express()
 dbConnect() // to connect database
 
 console.log(process.env.PORT)
-//const port = 5000
+//const port = 
 
-app.get("/auth/api",authRoutes) // to use auth routes for api
+app.use(express.json()) // to parse json data from request body
+
+app.use("/auth/api",authRoutes) // to use auth routes for api
 
 app.listen(process.env.PORT, ()=>{
     console.log(`server is running at port ${process.env.PORT}`)
