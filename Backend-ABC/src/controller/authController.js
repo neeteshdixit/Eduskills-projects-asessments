@@ -1,9 +1,9 @@
 import User from "../models/User.js";
 
-// const otpGenerate = () =>{
-//     const otp = Math.floor(100000 + Math.random() * 900000);
-//     return otp;
-// }
+const otpGenerate = () =>{
+    const otp = Math.floor(100000 + Math.random() * 900000);
+    return otp;
+}
 
 const userRegister = async(req, res) =>{
     const {name,email,password} = req.body;
@@ -32,11 +32,45 @@ const userRegister = async(req, res) =>{
         
     }
     
+    
+}
+
+const otp_verify= async(req, res) =>{
+    const {otp ,email} = req.body;
+    if(!otp || !email){
+        return res.status(400).json({message:"All fields are required"});
+    }
+    try{
+        const user = await User.findOne({email});
+
+        if(!user){
+            return res.status(404).json({message:"User not found"});
+        } 
+        if(user.otp !== otp){
+            return res.status(400).json({message:"Invalid OTP"});
+        }
+            user.isVerified = true;
+            user.otp = undefined;
+            await user.save();
+    } catch (error) {
+        return res.status(500).json({message:"Error verifying OTP"});
+    }
+    return res.status(200).json({message:"OTP verified successfully"});
+}
+
+
+const getusers = async(req,res)=>{
+    try{
+        const users = await User.find();
+        return res.status(200).json({message:"Users fetched successfully", users})
+    } catch (error) {
+        return res.status(500).json({message:"Error fetching users"});
+    }
 }
 
 
 
-export {userRegister}
+export {userRegister, otp_verify, getusers, otpGenerate};
 
 
 // destructuring is used to extract the data from the request body and
