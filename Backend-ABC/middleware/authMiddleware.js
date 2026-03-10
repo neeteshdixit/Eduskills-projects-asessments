@@ -1,3 +1,14 @@
+
+const errorHandler = (err, req, res, next) => { 
+    console.error(err.stack); 
+    res.status(500).json({ msg: err.message || 'Server Error' }); 
+    next();
+}; 
+
+export default errorHandler;
+
+
+
 // types of middleware functions in Express.js:
 // 1. Application-level middleware: These are middleware functions that are bound to an instance of the Express application using app.use() or app.METHOD(). They can be used for tasks such as logging, authentication, and error handling.
 // 2. Router-level middleware: These are middleware functions that are bound to an instance of the Express router using router.use() or router.METHOD(). They can be used for tasks such as validating request parameters or handling specific routes.

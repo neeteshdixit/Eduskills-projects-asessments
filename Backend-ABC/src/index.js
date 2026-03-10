@@ -6,6 +6,7 @@ import express from "express"  // for es6 module
 import dotenv from "dotenv"
 import dbConnect from "./config/db.js"
 import authRoutes from "./routes/authRoutes.js"
+import errorHandler from './middleware/errorMiddleware.js'; 
 
 dotenv.config()// to use env variable for project
 
@@ -19,6 +20,7 @@ console.log(process.env.PORT)
 app.use(express.json()) // to parse json data from request body
 
 app.use("/auth/api",authRoutes) // to use auth routes for api
+app.use(errorHandler);
 
 app.use(express.urlencoded({ extended: true }));// to parse urlencoded data from request body means a file url or a image url
 
