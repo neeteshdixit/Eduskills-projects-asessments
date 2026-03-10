@@ -20,6 +20,10 @@ app.use(express.json()) // to parse json data from request body
 
 app.use("/auth/api",authRoutes) // to use auth routes for api
 
+app.use(express.urlencoded({ extended: true }));// to parse urlencoded data from request body means a file url or a image url
+
+app.use(express.static("public")) // to serve static files from public folder
+
 app.listen(process.env.PORT, ()=>{
     console.log(`server is running at port ${process.env.PORT}`)
 })
