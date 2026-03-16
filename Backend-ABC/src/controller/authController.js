@@ -1,95 +1,106 @@
 import User from "../models/User.js";
-
-const otpGenerate = () =>{
+import bcrypt from "bcrypt";
+import jwt from "jsonwebtoken";
+import dotenv from "dotenv"
+dotenv.config()
+const otpGenerate = () => {
     const otp = Math.floor(100000 + Math.random() * 900000);
     return otp;
+};
+
+const passwordHash = async (password) => {
+    const salt = 10;
+    const passHash = await bcrypt.hash(password, salt);
+    return passHash;
+};
+
+const generateAccessToken=(id)=>{
+    return jwt.sign({id}, process.env.JWT_SECRET,{
+        expiresIn:process.env.ACCESS_TOKEN_EXPIRES || "10m"
+    })
 }
 
-const userRegister = async(req, res) =>{
-    const {name,email,password} = req.body;
-    if(!name || !email || !password){
-        return res.status(400).json({message:"All fields are required"});
+const refreshAccessToken=(id)=>{
+    return jwt.sign({id}, process.env.JWT_SECRET,{
+        expiresIn:process.env.REFRESH_TOKEN_EXPIRES || "15d"
+    })
+}
+
+const userRegister = async (req, res) => {
+    const { name, email, password } = req.body;
+
+    if (!name || !email || !password) {
+        return res.status(400).json({ message: "All fields are required" });
     }
+
     try {
-        const userExist = await User.findOne({email});
+        const userExist = await User.findOne({ email });
 
-        if(userExist){
-            return res.status(402).json({message:"User already exist"});
+        if (userExist) {
+            return res.status(400).json({ message: "User already exist" });
         }
-        
-        // const otp = otpGenerate();
-        const user = new User({name,email,password});
 
-        const userdata =  await user.save();
+        const hashedPassword = await passwordHash(password);
+        const otp = otpGenerate();
 
-        if(!userdata){
-            return res.status(400).json({message:"User registration failed"});
-        }
-        return res.status(201).json({message:"User registered successfully", user:userdata});
-        
+        const user = new User({
+            name,
+            email,
+            password: hashedPassword,
+            otp
+        });
+
+        const userdata = await user.save();
+
+        return res.status(201).json({
+            message: "User registered successfully",
+            user: userdata
+        });
+
     } catch (error) {
-
-        
+        return res.status(500).json({ message: "Error registering user" });
     }
-    
-    
-}
+};
 
-const otp_verify= async(req, res) =>{
-    const {otp ,email} = req.body;
-    if(!otp || !email){
-        return res.status(400).json({message:"All fields are required"});
+const login = async (req, res) => {
+
+    const { email, password } = req.body;
+
+    if (!email || !password) {
+        return res.status(400).json({ message: "All fields required" });
     }
-    try{
-        const user = await User.findOne({email});
 
-        if(!user){
-            return res.status(404).json({message:"User not found"});
-        } 
-        if(user.otp !== otp){
-            return res.status(400).json({message:"Invalid OTP"});
-        }
-            user.isVerified = true;
-            user.otp = undefined;
-            await user.save();
-    } catch (error) {
-        return res.status(500).json({message:"Error verifying OTP"});
-    }
-    return res.status(200).json({message:"OTP verified successfully"});
-}
-
-
-const getusers = async(req,res)=>{
-    try{
-        const users = await User.find();
-        return res.status(200).json({message:"Users fetched successfully", users})
-    } catch (error) {
-        return res.status(500).json({message:"Error fetching users"});
-    }
-}
-
-const login = async(req,res)=>{
-    const {email,password} = req.body;
-    if(!email || !password){
-        return res.status(400).json({message:"All fields are required"});
-    }
     try {
-        const user = await User.findOne({email});
 
-        if(!user){
-            return res.status(404).json({message:"User not found"});
+        const user = await User.findOne({ email });
+
+        if (!user) {
+            return res.status(404).json({ message: "User not found" });
         }
-        if(user.password !== password){
-            return res.status(400).json({message:"Invalid password"});
+
+        const isMatch = await bcrypt.compare(password, user.password);
+
+        if (!isMatch) {
+            return res.status(400).json({ message: "Invalid password" });
         }
-        return res.status(200).json({message:"User logged in successfully", user});
+
+        const accessToken= generateAccessToken(user._id)
+        const refreshToken= refreshAccessToken(user._id)
+
+        return res.status(200).json({
+            accessToken,
+            refreshAccessToken,
+            message: "Login successful",
+            user
+        });
+
     } catch (error) {
-        return res.status(500).json({message:"Error logging in"});
+        return res.status(500).json({ message: "Error logging in" });
     }
-}
 
+};
 
-export {userRegister, otp_verify, getusers, otpGenerate, login};
+export { userRegister, otpGenerate, login };
 
 
 // destructuring is used to extract the data from the request body and

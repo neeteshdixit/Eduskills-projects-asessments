@@ -6,7 +6,8 @@ const userSchema = new mongoose.Schema({
     password:{type:String, required:true},
     otp:{type:Number, default:null},
     otpExpire:{type:Date},
-    isVerify:{type:Boolean,default:false}
+    isVerify:{type:Boolean,default:false},
+    refreshToken:{type:String, default:""}
 })
 
 const User = mongoose.model("User", userSchema)
