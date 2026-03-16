@@ -100,7 +100,7 @@ const login = async (req, res) => {
 
 };
 
-export { userRegister, otpGenerate, login };
+export { userRegister, otpGenerate, login,passwordHash,generateAccessToken,refreshAccessToken};
 
 
 // destructuring is used to extract the data from the request body and

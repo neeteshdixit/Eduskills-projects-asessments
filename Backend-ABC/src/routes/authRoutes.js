@@ -8,7 +8,7 @@ import protect from '../middleware/authMiddleware.js';
 
 const router = express.Router();
 
-router.post("/register", userRegister)
+router.post("/register",protect, userRegister)
 // router.get("/users", protect, getusers)
 // router.post("/otp-verify", otp_verify)  
 router.get("/otp-generate", otpGenerate) // to generate otp for user registration

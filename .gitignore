@@ -1,0 +1,22 @@
+
+# Node modules
+node_modules/
+
+# Environment files
+.env
+
+# IDE files
+.idea/
+.vscode/
+
+# Logs
+*.log
+
+# System files
+.DS_Store
+
+# Large files
+*.zip
+*.rar
+*.mp4
+*.exe
